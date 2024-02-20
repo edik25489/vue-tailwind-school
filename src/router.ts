@@ -6,20 +6,43 @@ export default createRouter({
         {
             path:'/',
             props:true,
-            name: 'Home',
+            name: 'home',
             component: () => import('./page/Home.vue'),
         },
         {
             path:'/courses',
-            props:true,
-            name: 'Courses',
-            component: () => import('./page/Courses.vue')
+            children:[
+                {
+                    path:':id',
+                    props:true,
+                    name: 'course',
+                    component: () => import('./views/Course.vue'),
+                },
+                {
+                    path:'',
+                    props:true,
+                    name: 'courses',
+                    component: () => import('./page/Courses.vue'),
+                }
+            ]
         },
         {
             path:'/videos',
             props:true,
-            name: 'Videos',
+            name: 'videos',
             component: () => import('./page/Videos.vue')
+        },
+        {
+            path:'/metodics',
+            props:true,
+            name: 'metodics',
+            component: () => import('./page/Metodics.vue')
+        },
+        {
+            path:'/educations',
+            props:true,
+            name: 'educations',
+            component: () => import('./page/Educations.vue')
         },
     ],
 })
