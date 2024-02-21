@@ -1,10 +1,14 @@
 <script setup lang="ts">
-defineProps(["course"])
+import {useCoursesStore} from "../store/modules/courses.ts";
+const course = useCoursesStore().getCourse
+import CourseItem from "../components/CourseItem.vue";
 
 </script>
 
 <template>
-  {{course}}
+  <div class="sm:container mx-auto flex flex-row flex-wrap justify-around mt-4 gap-4">
+    <CourseItem :course="course"/>
+  </div>
 </template>
 
 <style scoped>

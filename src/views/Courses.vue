@@ -1,18 +1,20 @@
 <script setup lang="ts">
-import {mapGetters} from "vuex";
+import {useCoursesStore} from "../store/modules/courses.ts";
+const courses = useCoursesStore()
 
 </script>
 
 <template>
-  <div class="sm:container mx-auto flex flex-row flex-wrap justify-around mt-4 gap-4"
-      v-for="item in store.getters.getCourses">
-    <div class="w-full max-w-80 bg-white hover:bg-slate-100 border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
 
-      <img class="p-8 mx-auto rounded-t-lg max-h-80" :src=item.img alt="product image" />
+  <div class="sm:container mx-auto flex flex-row flex-wrap justify-around mt-4 gap-4">
+    <div class="w-full max-w-80 bg-white hover:bg-slate-100 border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+         v-for="item in courses.getCourses">
+
+      <img class="p-8 mx-auto rounded-t-lg max-h-48" :src=item.img alt="product image" />
 
       <div class="px-5 pb-5">
 
-        <h5 class="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">{{item.name}}</h5>
+        <h5 class="text-xl truncate font-semibold tracking-tight text-gray-900 dark:text-white">{{item.name}}</h5>
 
         <div class="flex items-center mt-2.5 mb-5">
           <div class="flex items-center space-x-1 rtl:space-x-reverse">
@@ -36,7 +38,10 @@ import {mapGetters} from "vuex";
         </div>
         <div class="flex items-center justify-between">
           <span class="text-2xl font-bold text-gray-900 dark:text-white">Бесплатно</span>
-          <router-link :to="{name:'course', params:{id: item.id}}" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+          <router-link
+              class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              :to = "{name:'course', params:{id:item.id}}"
+              @click="courses.setCourse(item.id)">
             Открыть
           </router-link>
         </div>

@@ -7,7 +7,7 @@ export default createRouter({
             path:'/',
             props:true,
             name: 'home',
-            component: () => import('./page/Home.vue'),
+            component: () => import('./views/Home.vue'),
         },
         {
             path:'/courses',
@@ -22,7 +22,7 @@ export default createRouter({
                     path:'',
                     props:true,
                     name: 'courses',
-                    component: () => import('./page/Courses.vue'),
+                    component: () => import('./views/Courses.vue'),
                 }
             ]
         },
@@ -30,19 +30,19 @@ export default createRouter({
             path:'/videos',
             props:true,
             name: 'videos',
-            component: () => import('./page/Videos.vue')
+            component: () => import('./views/Videos.vue')
         },
         {
             path:'/metodics',
             props:true,
             name: 'metodics',
-            component: () => import('./page/Metodics.vue')
+            component: () => import('./views/Metodics.vue')
         },
         {
             path:'/educations',
             props:true,
             name: 'educations',
-            component: () => import('./page/Educations.vue')
+            component: () => import('./views/Educations.vue')
         },
     ],
 })
