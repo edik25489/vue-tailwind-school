@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import {useVideosStore} from "../store/modules/videos.ts";
+import {useVideosStore} from "../store/videos.ts";
 const videos = useVideosStore()
 </script>
 

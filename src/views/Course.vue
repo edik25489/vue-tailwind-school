@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import {useCoursesStore} from "../store/modules/courses.ts";
+import {useCoursesStore} from "../store/courses.ts";
 const course = useCoursesStore().getCourse
 import CourseItem from "../components/CourseItem.vue";
 
