@@ -1,5 +1,7 @@
 <script setup lang="ts">
 import {useCoursesStore} from "../store/courses.ts";
+import {useTeachersStore} from "../store/teacher.ts";
+const teachers = useTeachersStore().getTeachers
 const courses = useCoursesStore()
 </script>
 
@@ -45,6 +47,44 @@ const courses = useCoursesStore()
       </div>
     </div>
   </div>
+
+  <section class="mt-3 py-14 bg-amber-50 sm:container rounded-2xl mx-auto">
+    <div class="max-w-screen-xl mx-auto px-4 md:px-8">
+      <div class="max-w-xl">
+        <h3 class="text-gray-800 text-3xl font-semibold sm:text-4xl">
+          Наши преподаватели
+        </h3>
+        <p class="text-gray-600 mt-3">
+          В нашей команде преподаватели с большим оптыом работы в крупных компаниях
+        </p>
+      </div>
+      <div class="mt-12">
+        <ul
+
+            class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+
+          <li v-for="(teacher, idx) in teachers" :key="idx"
+              class="flex gap-4 items-center">
+            <div class="flex-none w-24 h-24">
+              <img
+                  :src=teacher.img
+                  class="w-full h-full rounded-full object-contain"
+                  alt=""
+              />
+            </div>
+            <div>
+              <h4 class="text-gray-700 font-semibold sm:text-lg">{{teacher.name}}</h4>
+              <p class="text-indigo-600">{{teacher.author}}</p>
+              <div class="mt-3 flex gap-4 text-gray-400">
+
+              </div>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </section>
 
   <section class="bg-white dark:bg-gray-900">
     <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 z-10 relative">

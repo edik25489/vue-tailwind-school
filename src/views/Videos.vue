@@ -13,9 +13,7 @@ const videos = useVideosStore()
             <img :src=video.img alt="описание" class="w-full h-48 rounded-t-md object-contain" />
           </a>
             <div class="flex items-center mt-2 pt-3 ml-4 mr-2">
-              <div class="flex-none w-10 h-10 rounded-full">
-                <img src="https://api.uifaces.co/our-content/donated/xZ4wg2Xj.jpg" alt="описание" class="w-full h-full rounded-full" />
-              </div>
+
               <div class="ml-3">
                 <span class="block text-gray-900"></span>
               </div>
