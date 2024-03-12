@@ -2,7 +2,6 @@
 import {useCoursesStore} from "../store/courses.ts";
 import {useTeachersStore} from "../store/teacher.ts";
 const teachers = useTeachersStore().getTeachers
-const courses = useCoursesStore()
 </script>
 
 <template>
@@ -24,29 +23,6 @@ const courses = useCoursesStore()
       </div>
     </div>
   </section>
-  <div class="sm:container mx-auto flex flex-col bg-slate-200 mt-4 rounded-2xl">
-    <div class="flex items-center justify-around mt-3">
-      <h5 class="text-xl font-bold leading-none text-gray-900 dark:text-white">Популярные курсы</h5>
-      <router-link to="/courses" class="text-sm font-medium text-blue-500 hover:underline dark:text-blue-400">
-        Все курсы
-      </router-link>
-    </div>
-    <div class="columns-3 grid grid-cols-3 mx-auto gap-4 my-3">
-      <div class="flex flex-col max-w-sm p-6 bg-white hover:bg-emerald-100 hover:cursor-pointer border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
-          v-for="(item,index) in courses.getCoursesLimit" :key="index">
-        <router-link :to = "{name:'course', params:{id:item.id}}"
-                     @click="courses.setCourse(item.id)"
-                     class="inline-flex font-medium items-center text-blue-600">
-        <div class="flex flex-col">
-          <svg class="w-7 h-7 text-gray-500 dark:text-gray-400 mb-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-            <path d="M18 5h-.7c.229-.467.349-.98.351-1.5a3.5 3.5 0 0 0-3.5-3.5c-1.717 0-3.215 1.2-4.331 2.481C8.4.842 6.949 0 5.5 0A3.5 3.5 0 0 0 2 3.5c.003.52.123 1.033.351 1.5H2a2 2 0 0 0-2 2v3a1 1 0 0 0 1 1h18a1 1 0 0 0 1-1V7a2 2 0 0 0-2-2ZM8.058 5H5.5a1.5 1.5 0 0 1 0-3c.9 0 2 .754 3.092 2.122-.219.337-.392.635-.534.878Zm6.1 0h-3.742c.933-1.368 2.371-3 3.739-3a1.5 1.5 0 0 1 0 3h.003ZM11 13H9v7h2v-7Zm-4 0H2v5a2 2 0 0 0 2 2h3v-7Zm6 0v7h3a2 2 0 0 0 2-2v-5h-5Z"/>
-          </svg>
-          <h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">{{item.name}}</h5>
-        </div>
-        </router-link>
-      </div>
-    </div>
-  </div>
 
   <section class="mt-3 py-14 bg-amber-50 sm:container rounded-2xl mx-auto">
     <div class="max-w-screen-xl mx-auto px-4 md:px-8">

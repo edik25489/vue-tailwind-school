@@ -5,7 +5,7 @@
 <template>
   <nav class="sticky top-0 bg-white border-b-2 border-gray-300 dark:bg-gray-900">
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-      <a href="https://chpk.rchuv.ru/" class="flex items-center space-x-3 rtl:space-x-reverse">
+      <a href="https://chpk.rchuv.ru/" target="_blank" class="flex items-center space-x-3 rtl:space-x-reverse">
         <img src="../../public/logo.jpg" height="50" width="50" class="object-contain"/>
       </a>
       <button data-collapse-toggle="navbar-default" type="button"
@@ -23,6 +23,11 @@
             <router-link to="/" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
               Главная
             </router-link>
+          </li>
+          <li>
+            <a href="https://chpk.rchuv.ru/" target="_blank" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
+              ЧПК
+            </a>
           </li>
           <li>
             <router-link to="/courses" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
