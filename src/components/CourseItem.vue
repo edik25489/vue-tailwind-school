@@ -70,7 +70,9 @@ onMounted(() => {
       </div>
     </div>
   </section>
-
+<div class="flex justify-center items-center">
+  <a :href="course.src" target="_blank" class="block py-2 px-6 border hover:border-teal-500 hover:text-teal-500 rounded-2xl bg-teal-500 hover:bg-white text-white transform duration-200 ease-linear">Перейти на курс</a>
+</div>
 </template>
 
 <style scoped>

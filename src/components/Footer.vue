@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <footer class="bottom-0 left-0 z-20 w-full p-4 bg-white dark:bg-gray-900">
+  <footer class="bottom-0 left-0 z-20 max-w-screen-xl p-4 bg-white dark:bg-gray-900">
     <div class="mx-auto w-full sm:container p-4 py-6 lg:py-8">
       <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
       <div class="flex items-center justify-center">

@@ -431,6 +431,7 @@ export const useCoursesStore = defineStore('courses',
             courses: [
             {
                 id: 1393373,
+                src:'https://stepik.org/course/139373/promo',
                 name: 'Алгебратор - часть 1 (Базовый уровень)',
                 desc: 'Запланированная серия курсов "Алгебратор" предназначена для тех, кто хочет изучить или повторить базовую математику начиная с самых основ.',
                 img: 'https://cdn.stepik.net/media/cache/images/courses/139373/cover_OEm2q0x/8628fcb03f3c0a5a0db5d465d071cf3f.png',
@@ -518,6 +519,7 @@ export const useCoursesStore = defineStore('courses',
             },
             {
                 id: 66932,
+                src:'https://stepik.org/course/66932/promo',
                 name: 'Анимация в After Effects',
                 img: 'https://cdn.stepik.net/media/cache/images/courses/66932/cover_SMo1jbR/94333c6c9b131347f3e43185736e967c.jpg',
                 about: [
@@ -556,6 +558,7 @@ export const useCoursesStore = defineStore('courses',
             {
                 id: 184176,
                 name: 'Графический дизайн',
+                src:'https://stepik.org/course/184176/promo',
                 img: 'https://cdn.stepik.net/media/cache/images/courses/184176/cover_TfAUErp/50055a31335593746b3a1e8ae024bf8c.png',
                 about: [
                     {name: 'В курс входят 5 тематических вебинаров: Что такое графический дизайн Основные функции Adobe PhotoshopОсновные функции Adobe Photoshop, правила дизайна Digital Art или цифровой рисунок Мокапы и презентация проектов',},
@@ -624,6 +627,7 @@ export const useCoursesStore = defineStore('courses',
             {
                 id: 104818,
                 name: 'Подготовка к ОГЭ-2024 по информатике',
+                src:'https://stepik.org/course/104818/promo',
                 img: 'https://cdn.stepik.net/media/cache/images/courses/104818/cover_D2xfc01/ee879c4de1a2a1d5fd2f8b26a3de34fd.jpg',
                 about: [
                     {
@@ -787,6 +791,7 @@ export const useCoursesStore = defineStore('courses',
             {
                 id: 363,
                 name: 'Введение в программирование (C++)',
+                src:'https://stepik.org/course/363/promo',
                 img: 'https://cdn.stepik.net/media/cache/images/courses/363/cover/a6bf7a2a23ef951e6ab19c16e878f2d4.jpg',
                 about: [
                     {
@@ -831,6 +836,7 @@ export const useCoursesStore = defineStore('courses',
             {
                 id: 86875,
                 name: 'Как собрать кубик Рубика 3х3. Простой метод для начинающих.',
+                src:'https://stepik.org/course/86875/promo',
                 desc: 'Самый понятный, простой и бесплатный курс по сборке кубика Рубика 3х3! В рамках этого курса вы быстро научитесь собирать кубик Кубика одним из простых и понятных способов для начинающих.',
                 img: 'https://cdn.stepik.net/media/cache/images/courses/86875/cover_pixapHf/f5c5b531b6f3737f0c907ddd19f773b1.JPG',
                 about: [
@@ -892,6 +898,7 @@ export const useCoursesStore = defineStore('courses',
             {
                 id: 87314,
                 name: 'PHP - первое знакомство',
+                src:'https://stepik.org/course/87314/promo',
                 desc: 'Это курс по PHP для самых маленьких. Почему? Потому что показаны будут прежде всего азы (хотя и не только), при этом в достаточно краткой форме.',
                 img: 'https://cdn.stepik.net/media/cache/images/courses/87314/cover_Zjy0VhQ/0feb7b3ee7f55b52fccf213861600a7f.png',
                 about: [
@@ -1006,6 +1013,7 @@ export const useCoursesStore = defineStore('courses',
             {
                 id: 58852,
                 name: 'Поколение Python": курс для начинающих',
+                src:'https://stepik.org/course/58852/promo',
                 desc: 'Курс с кучей тренировочных задач, удобный как для самостоятельного изучения, так и для работы в группе в рамках внеурочной деятельности.',
                 img: 'https://cdn.stepik.net/media/cache/images/courses/58852/cover_xGphyPj/ca3f6f66d38c26e93f7dacf8bd7a2a32.png',
                 about: [
@@ -1157,6 +1165,7 @@ export const useCoursesStore = defineStore('courses',
             {
                 id: 197114,
                 name: 'LaTeX с нуля',
+                src:'https://stepik.org/course/197114/promo',
                 desc: 'Полный курс обучения работы в научной издательской системе LaTeX, за время ознакомления с которым вы пройдёте стадии от новичка до продвинутого пользователя',
                 img: 'https://cdn.stepik.net/media/cache/images/courses/197114/cover_2hrO8xK/02f2573c819d246b592eb747c10d5782.png',
                 about: [
@@ -1231,6 +1240,7 @@ export const useCoursesStore = defineStore('courses',
             {
                 id: 179088,
                 name: 'Писательский курс: база для начинающих авторов',
+                src:'https://stepik.org/course/179088/promo',
                 img: 'https://cdn.stepik.net/media/cache/images/courses/179088/cover_ihcoxXS/2c70bff0ee470ed0980202acb41e7fd2.png',
                 about: [
                     {
@@ -1286,6 +1296,7 @@ export const useCoursesStore = defineStore('courses',
             {
                 id: 129672,
                 name: 'Figma для слайдов',
+                src:'https://stepik.org/course/129672/promo',
                 img: 'https://cdn.stepik.net/media/cache/images/courses/129672/cover_t8jZOF2/9eba999fc598c121ed331b6dc3dd4a71.png',
                 about: [
                     {
@@ -1339,6 +1350,7 @@ export const useCoursesStore = defineStore('courses',
             {
                 id: 187818,
                 name: 'Погружение в SQL: Основы и первые шаги',
+                src:'https://stepik.org/course/187818/promo',
                 img: 'https://cdn.stepik.net/media/cache/images/courses/187818/cover_2AMfiYj/e03ed452251cb8c10cb943858e060e07.png',
                 about: [
                     {
@@ -1425,6 +1437,7 @@ export const useCoursesStore = defineStore('courses',
             {
                 id: 185640,
                 name: 'MS Excel / Базовый курс',
+                src:'https://stepik.org/course/185640/promo',
                 img: 'https://cdn.stepik.net/media/cache/images/courses/185640/cover_DRgOcOh/0e760d8f21c4a2fcc4e10c8e54077935.png',
                 about: [
                     {
@@ -1470,6 +1483,7 @@ export const useCoursesStore = defineStore('courses',
             {
                 id: 72713,
                 name: 'Подготовка к ЕГЭ по информатике',
+                src:'https://stepik.org/course/72713/promo',
                 img: 'https://cdn.stepik.net/media/cache/images/courses/72713/cover_SLhMXe1/65e6c88aebee14323e44ea622f1c2451.png',
                 about: [
                     {
@@ -1531,6 +1545,7 @@ export const useCoursesStore = defineStore('courses',
             {
                 id: 126333,
                 name: 'Анализ данных(Введение в Pythonи обработку таблиц)',
+                src:'https://stepik.org/course/126333/promo',
                 img: 'https://cdn.stepik.net/media/cache/images/courses/126333/cover_qz96MIc/2f4b0fa896a3d4f022b9ff711277d69c.png',
                 about: [
                     {
@@ -1612,6 +1627,7 @@ export const useCoursesStore = defineStore('courses',
             {
                 id: 109365,
                 name: 'Онлайн-марафон. Медитация/Режим дня/Положительные привычки',
+                src:'https://stepik.org/course/109365/promo',
                 img: 'https://cdn.stepik.net/media/cache/images/courses/109365/cover_40CffHa/2267bdd1e0ee9d41f6123263f90ee0b1.jpeg',
                 about: [
                     {
@@ -1696,6 +1712,7 @@ export const useCoursesStore = defineStore('courses',
             {
                 id: 75211,
                 name: 'Основы строительного черчения. AutoCAD',
+                src:'https://stepik.org/course/75211/promo',
                 img: 'https://cdn.stepik.net/media/cache/images/courses/75211/cover_IYGoFa2/b7623c3c9c02a89de5c398133446b31c.png',
                 about: [
                     {
